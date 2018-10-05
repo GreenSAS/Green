@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Futura";
+  src: url("FuturaPTBook.eot") format("embedded-opentype"),
+       url("FuturaPTBook.svg") format("svg"),
+       url("FuturaPTBook.ttf") format("truetype"),
+       url("FuturaPTBook.woff") format("woff"),
+       url("FuturaPTBook.otf") format("opentype");
+}
+
+body{
+   font-size: 16px;
+   font-family: "Futura", sans-serif;
+   color:#403e2c;
+}
+
+h1, h2, h3{
+  font-weight:bold;
+}
+
+h1, h2{
+  color:#96c13d;
+}
+
+h1{
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2{
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+h3{
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header */
+
+header{
+  height: 4rem;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  color: #96c13d;
+}
+
+header a{
+  color: #96c13d;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem 0 1.5rem;
+  height: 100%;
+}
+
+.logo{
+  display: flex;
+  align-items:center;
+  font-size:1.25rem;
+  letter-spacing: 0.04rem;
+}
+
+header .desktop li{
+  display: inline;
+  margin-right: 1rem;
+  color: hsl(60, 2%, 30%);
+}
+
+
+
+header img{
+  height: 3rem;
+  width: auto;
+}
+
+header p {
+  margin-left: 0.5rem;
+}
+
+/* Banner */
+
+.banner{
+  height: 60rem;
+  width: 100%;
+  text-align: center;
+  background-color:#006b36;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+/* Sections general */
+
+section{
+  text-align: center;
+  height: 40rem;
+  width: 100%;
+}
+
+section h2{
+  margin: 5rem;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.box{
+  text-align: center;
+  width: 20%;
+}
+
+.box h3{
+  margin-top: 1rem;
+}
+
+.box p{
+  margin-top: 1.5rem;
+  line-height: 1.3rem;
+}
+
+section img{
+  height: 5rem;
+  width:auto;
+}
+
+/* Section mockup */
+
+div #Mockup{
+  display: inline;
+  border: 1px solid red;
+}
+
+#Mockup img{
+ width: 33%;
+ height: auto;
+}
+
+/* Section Nous */
+
+#Qui{
+  background-color: #006b36;
+  color:#96c13d;
+}
+
+#Qui img{
+  height: 20rem;
+  width: auto;
+}
+
+#Qui a{
+  color: #212724;
+}
+
+#Qui p{
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Section contact */
+
+#Contact h1{
+  padding-top: 20rem;
+}
