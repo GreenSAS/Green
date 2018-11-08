@@ -38,51 +38,51 @@ h3{
 
 a{
   text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  z-index: 2000;
 }
 
 /* Header */
 
 header{
   height: 4rem;
-  z-index: 999;
+  z-index: 998;
   position: fixed;
   width: 100%;
-  color: #96c13d;
 }
 
 header a{
-  color: #96c13d;
-  transition: all 1s linear;
+  color: white;
 }
 
 .header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5rem 0 1.5rem;
+  padding: 0 0.5rem 0 0.75rem;
   height: 100%;
+  transition: 0.4s;
+  border: none;
 }
 
-.logo{
-  display: flex;
-  align-items:center;
-  font-size:1.25rem;
-  letter-spacing: 0.04rem;
+#logo{
+  display: none;
 }
 
-header .desktop li{
+header li{
   display: inline;
   margin-right: 1rem;
   color: hsl(60, 2%, 30%);
 }
 
 header img{
-  height: 3rem;
+  height: 2.75rem;
   width: auto;
-}
-
-header p {
-  margin-left: 0.5rem;
 }
 
 /* Banner */
@@ -92,9 +92,17 @@ header p {
   background-color:#b1d355;
   overflow: hidden;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#lottie{
+video{
+  height: 80%;
+  width: auto;
+}
+
+/*#lottie{
     background-color:#b1d355;
     width:100%;
     height:100%;
@@ -103,7 +111,7 @@ header p {
     transform: translate3d(0,0,0);
     text-align: center;
     opacity: 1;
-}
+}*/
 
 /* Sections general */
 
@@ -200,8 +208,10 @@ form {
   border-radius: 1em;
   color:#96c13d;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  font: 1em sans-serif;
 }
 
 .contact-box{
@@ -217,13 +227,11 @@ form {
 }
 
 input {
-  font: 1em sans-serif;
   width: 18rem;
   border: 1px solid #999;
 }
 
 textarea {
-  font: 1em sans-serif;
   width: 17.75rem;
   border: 1px solid #999;
   height: 10rem;
@@ -231,6 +239,14 @@ textarea {
 
 label{
   margin-right: 0.5rem;
+}
+
+.thankyou_message{
+  margin-top: 4rem;
+}
+
+#honeypot {
+  display: none;
 }
 
 /* Footer */
