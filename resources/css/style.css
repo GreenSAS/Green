@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Futura";
-  src: url("FuturaPTBook.eot") format("embedded-opentype"),
-       url("FuturaPTBook.svg") format("svg"),
-       url("FuturaPTBook.ttf") format("truetype"),
-       url("FuturaPTBook.woff") format("woff"),
+  src: url("FuturaPT-Book.eot") format("embedded-opentype"),
+       url("FuturaPT-Book.svg") format("svg"),
+       url("FuturaPT-Book.ttf") format("truetype"),
+       url("FuturaPT-Book.woff") format("woff"),
        url("FuturaPTBook.otf") format("opentype");
 }
 
@@ -243,6 +243,7 @@ label{
 
 .thankyou_message{
   margin-top: 4rem;
+  display:none;
 }
 
 #honeypot {
