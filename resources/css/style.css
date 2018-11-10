@@ -7,6 +7,8 @@
        url("FuturaPTBook.otf") format("opentype");
 }
 
+/* Styles généraux*/
+
 body{
    font-family: "Futura", sans-serif;
    color:#403e2c;
@@ -85,7 +87,7 @@ header img{
   width: auto;
 }
 
-/* Banner */
+/* Bannière/Anim */
 
 .banner{
   height: 100vh;
@@ -113,7 +115,7 @@ video{
     opacity: 1;
 }*/
 
-/* Sections general */
+/* Styles sections */
 
 section{
   text-align: center;
@@ -150,30 +152,34 @@ section img{
   width:auto;
 }
 
-/* Section mockup */
+/* Div Mockup */
 
-.mockup{
- width: 100%;
- margin: 0;
- padding: 0;
- border: 0;
- outline: 0;
-}
 
 .mockup ul{
   display: flex;
   list-style: none;
 }
 
-.mockup li{
- width: 33.33%;
-}
 
 .mockup img{
   width: 100%;
 }
 
-/* Section Nous */
+/* Div Intercal */
+
+.intercal{
+  height: 20rem;
+  width: 100%;
+  background-color:#212724;
+  color: white;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+/* Section Qui-sommes-nous? */
 
 #Qui{
   background-color: #006b36;
@@ -194,7 +200,7 @@ section img{
   margin-bottom: 1.5rem;
 }
 
-/* Section contact */
+/* Section Contact */
 
 #Contact{
   padding: 3rem 0;
