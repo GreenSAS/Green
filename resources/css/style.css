@@ -19,7 +19,7 @@
 
 body{
    font-family: "OpenSans", sans-serif;
-   color:#403e2c;
+   color:#333333;
    font-size: 16px;
    cursor: default;
 }
@@ -29,7 +29,7 @@ h1, h2, h3{
 }
 
 h1, h2{
-  color:#96c13d;
+  color:#73b74f;
 }
 
 h1{
@@ -48,8 +48,12 @@ h3{
 }
 
 i{
-  color:#96c13d;
+  color:#333333;
   font-size: 4.4rem;
+}
+
+i:hover {
+  color:#73b74f;
 }
 
 a{
@@ -171,20 +175,37 @@ section img{
 
 .mockup ul{
   display: flex;
+  overflow: hidden;
   list-style: none;
 }
 
 
 .mockup img{
   width: 100%;
+  height: auto;
+  margin: auto;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-backface-visibility: hidden;
 }
+
+/*.mockup img:hover{
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}*/
 
 /* Div Intercal */
 
 .intercal{
   height: 20rem;
   width: 100%;
-  background-color:#212724;
+  background-color:#31323a;
   color: white;
   text-align:center;
   display: flex;
@@ -196,17 +217,22 @@ section img{
 /* Section Qui-sommes-nous? */
 
 #Qui{
-  background-color: #006b36;
-  color:#96c13d;
+  background-color: #1d1c1a;
+  color:#f0eded;
 }
 
 #Qui img{
-  height: 20rem;
+  height: 15rem;
   width: auto;
+  overflow: hidden;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+  border:0.6rem solid #efeded;
 }
 
 #Qui a{
-  color: #212724;
+  color: #73b74f;
 }
 
 #Qui p{
@@ -282,7 +308,7 @@ footer{
 	display:  block;
 	overflow: hidden;
 	position: relative;
-	height:   40rem;
+	height:   45rem;
 	width:    100%;
 }
 
