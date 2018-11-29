@@ -146,7 +146,7 @@ section h2{
 
 .container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 5rem 0 10rem 0;
 }
 
@@ -154,7 +154,10 @@ section h2{
   text-align: center;
   width: 20%;
   margin: 0;
-  border: 1px solid red;
+}
+
+.box:nth-child(2n + 1){
+  margin: 0 10%;
 }
 
 .box h3{
