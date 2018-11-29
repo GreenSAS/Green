@@ -147,7 +147,6 @@ section h2{
 .container{
   display: flex;
   justify-content: space-around;
-  align-items: center;
   margin: 5rem 0 10rem 0;
 }
 
@@ -246,6 +245,7 @@ section img{
 #Qui .container{
   height: 40rem;
   margin: 0;
+  align-items: center;
 }
 
 /* Section Contact */
