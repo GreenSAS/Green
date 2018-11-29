@@ -14,6 +14,14 @@
        url("OpenSans-Regular.woff") format("woff"),
        url("OpenSans-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fontawesome-webfont.eot") format("embedded-opentype"),
+       url("fontawesome-webfont.svg") format("svg"),
+       url("fontawesome-webfont.ttf") format("truetype"),
+       url("fontawesome-webfont.woff") format("woff"),
+       url("FontAwesome.otf") format("opentype");
+}
 
 /* Styles généraux*/
 
@@ -44,6 +52,17 @@ h2{
 h3{
   font-size: 1.5rem;
   line-height: 1.5;
+}
+
+h4{
+  font-family: "FontAwesome", sans-serif;
+  line-height: 1;
+  color:#333333;
+  font-size: 70px;
+  display: block;
+  margin-bottom: 28px;
+  text-decoration: none;
+  cursor: default;
 }
 
 a{
