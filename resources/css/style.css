@@ -156,7 +156,7 @@ section h2{
   margin: 0;
 }
 
-.box:nth-child(2n + 1){
+.icon:nth-child(2n + 1){
   margin: 0 10%;
 }
 
@@ -250,6 +250,7 @@ section img{
   height: 40rem;
   margin: 0;
   align-items: center;
+  justify-content: space-around;
 }
 
 /* Section Contact */
