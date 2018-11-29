@@ -306,8 +306,30 @@ label{
 
 /* Footer */
 
+.footer{
+height: 5rem;
+width: 100%;
+background-color:#ffffff;
+color: #31333a;
+overflow: hidden;
+padding: 0 20px;
+border-top-width: 1px;
+border-top-style: solid;
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+
 footer{
-  background-color: #006b36;
+padding-top: 2rem;
+padding-bottom: 2rem;
+font-size: 14px;
+overflow: hidden;
+text-align: center;
+border-top-width: 1px;
+border-color: #f0f1f6;
+border-top-style: solid;
 }
 
 /*Parallaxer*/
