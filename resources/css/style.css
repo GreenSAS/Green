@@ -4,13 +4,21 @@
        url("FuturaPT-Book.svg") format("svg"),
        url("FuturaPT-Book.ttf") format("truetype"),
        url("FuturaPT-Book.woff") format("woff"),
-       url("FuturaPTBook.otf") format("opentype");
+       url("FuturaPT-Book.otf") format("opentype");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("OpenSans-Regular.eot") format("embedded-opentype"),
+       url("OpenSans-Regular.svg") format("svg"),
+       url("OpenSans-Regular.ttf") format("truetype"),
+       url("OpenSans-Regular.woff") format("woff"),
+       url("OpenSans-Regular.otf") format("opentype");
 }
 
 /* Styles généraux*/
 
 body{
-   font-family: "Futura", sans-serif;
+   font-family: "OpenSans", sans-serif;
    color:#403e2c;
    font-size: 16px;
 }
