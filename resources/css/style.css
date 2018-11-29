@@ -14,14 +14,6 @@
        url("OpenSans-Regular.woff") format("woff"),
        url("OpenSans-Regular.otf") format("opentype");
 }
-@font-face {
-  font-family: "FontAwesome";
-  src: url("fontawesome-webfont.eot") format("embedded-opentype"),
-       url("fontawesome-webfont.svg") format("svg"),
-       url("fontawesome-webfont.ttf") format("truetype"),
-       url("fontawesome-webfont.woff") format("woff"),
-       url("FontAwesome.otf") format("opentype");
-}
 
 /* Styles généraux*/
 
@@ -29,6 +21,7 @@ body{
    font-family: "OpenSans", sans-serif;
    color:#403e2c;
    font-size: 16px;
+   cursor: default;
 }
 
 h1, h2, h3{
@@ -54,15 +47,9 @@ h3{
   line-height: 1.5;
 }
 
-h4{
-  font-family: "FontAwesome", sans-serif;
-  line-height: 1;
-  color:#333333;
-  font-size: 70px;
-  display: block;
-  margin-bottom: 28px;
-  text-decoration: none;
-  cursor: default;
+i{
+  color:#96c13d;
+  font-size: 4.4rem;
 }
 
 a{
