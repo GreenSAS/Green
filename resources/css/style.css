@@ -137,23 +137,24 @@ video{
 
 section{
   text-align: center;
-  height: 40rem;
   width: 100%;
 }
 
 section h2{
-  margin: 5rem;
+  margin: 10rem 0 5rem 0;
 }
 
 .container{
   display: flex;
   justify-content: space-around;
-  padding: 5rem;
+  align-items: center;
+  margin: 5rem 0 10rem 0;
 }
 
 .box{
   text-align: center;
   width: 20%;
+  margin: 0;
 }
 
 .box h3{
@@ -184,6 +185,7 @@ section img{
   width: 100%;
   height: auto;
   margin: auto;
+/*
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -192,13 +194,14 @@ section img{
   -webkit-backface-visibility: hidden;
 }
 
-/*.mockup img:hover{
+.mockup img:hover{
 	transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-o-transform: scale(1.05);
 	-moz-transform: scale(1.05);
-}*/
+*/
+}
 
 /* Div Intercal */
 
@@ -228,7 +231,7 @@ section img{
   -webkit-border-radius:50%;
   -moz-border-radius:50%;
   border-radius:50%;
-  border:0.6rem solid #efeded;
+  border:0.6rem solid #73b74f;
 }
 
 #Qui a{
@@ -238,6 +241,11 @@ section img{
 #Qui p{
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
+}
+
+#Qui .container{
+  height: 40rem;
+  margin: 0;
 }
 
 /* Section Contact */
