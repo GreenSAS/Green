@@ -20,7 +20,7 @@
 body{
    font-family: "OpenSans", sans-serif;
    color:#333333;
-   font-size: 15px;
+   font-size: 16px;
    cursor: default;
 }
 
@@ -286,17 +286,10 @@ form {
   background: #333333;
   cursor: pointer;
 	display: inline-block;
-	font-style: normal;
 	font-weight: bold;
-	line-height: 1;
-	padding: 8px 10px 9px;
-	position: relative;
-	font-size:10px;
-	-moz-transition:all 0.3s ease 0s;
-	-webkit-transition:all 0.3s ease 0s;
-	-o-transition:all 0.3s ease 0s;
+	padding: 0.7rem 0.8rem 0.75rem;
+	font-size: 0.8rem;
 	transition:all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
 	border:none;
 }
 
