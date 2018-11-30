@@ -66,7 +66,6 @@ a{
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
-  z-index: 2;
 }
 
 /* Header */
@@ -143,14 +142,10 @@ section{
   padding: 10rem 0;
 }
 
-section h2{
-  margin-bottom: 5rem;
-}
-
 .container{
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .box{
@@ -235,6 +230,7 @@ section img{
 #Qui{
   background-color: #1d1c1a;
   color:#f0eded;
+  padding: 0;
 }
 
 #Qui img{
@@ -333,6 +329,12 @@ label{
 
 #honeypot {
   display: none;
+}
+
+/*Buttonnav*/
+
+.buttonnav{
+  padding:0;
 }
 
 /* Footer */
