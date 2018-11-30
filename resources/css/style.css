@@ -178,18 +178,19 @@ section img{
 
 /* Div Mockup */
 
-
 .mockup ul{
   display: flex;
   overflow: hidden;
   list-style: none;
 }
 
+.mockup li{
+ line-height: 0;
+}
 
 .mockup img{
   width: 100%;
   height: auto;
-  margin: auto;
 /*
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
