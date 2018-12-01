@@ -174,9 +174,17 @@ section img{
 
 /* Section Comp */
 
-#Competences{
-  background-color: #333333;
-}
+/* #Competences{
+  background-color: #1d1c1a;
+  color: #ffffff;
+} */
+
+/* Section Empreinte */
+
+/* #Empreinte{
+  background-color: #222a35;
+  color: #ffffff;
+} */
 
 /* Div Mockup */
 
@@ -216,8 +224,8 @@ section img{
 .intercal{
   height: 20rem;
   width: 100%;
-  background-color:#31323a;
-  color: white;
+  background-color:#222a35;
+  color:#f0eded;
   text-align:center;
   display: flex;
   align-items: center;
@@ -291,8 +299,8 @@ form {
   cursor: pointer;
 	display: inline-block;
 	font-weight: bold;
-	padding: 0.7rem 0.8rem 0.75rem;
-	font-size: 0.8rem;
+	padding: 0.6rem 0.7rem 0.65rem;
+	font-size: 0.7rem;
 	transition:all 0.3s ease 0s;
 	border:none;
 }
