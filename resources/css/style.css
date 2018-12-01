@@ -110,7 +110,7 @@ header img{
 
 .banner{
   height: 100vh;
-  background-color:#b1d355;
+  background-color:#6eb62e;
   overflow: hidden;
   margin: 0;
   display: flex;
@@ -119,7 +119,7 @@ header img{
 }
 
 video{
-  height: 80%;
+  height: 90%;
   width: auto;
 }
 
