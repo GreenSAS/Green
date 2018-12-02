@@ -119,8 +119,8 @@ header img{
 }
 
 video{
-  height: 90%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 /*#lottie{
