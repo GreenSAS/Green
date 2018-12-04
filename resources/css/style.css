@@ -151,23 +151,62 @@ i:hover {
   line-height: 1.3rem;
 }
 
-/* Section Comp */
+/* Section Premockup*/
 
-#Competences, #Empreinte{
-  padding: 10rem 0;
+#premockup{
+  height: 42rem;
+  position: relative;
 }
 
-/* #Competences{
-  background-color: #1d1c1a;
-  color: #ffffff;
-} */
+.tech{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #efeded;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* Section Competences */
+
+#Competences{
+  padding: 9rem 0;
+}
+
+#Competences .container{
+  margin-top: 9rem;
+}
+
+#Competences h1{
+  color: #333333;
+}
+
 
 /* Section Empreinte */
 
-/* #Empreinte{
+#Empreinte{
   background-color: #222a35;
   color: #ffffff;
-} */
+  padding: 10rem 0;
+}
+
+#Empreinte .container{
+  margin-top: 10rem;
+}
+
+#Empreinte h1{
+  line-height: 1;
+  color: #ffffff;
+}
+
+#Empreinte i{
+  color:#6fb72f;
+  font-size: 4rem;
+}
+
 
 /* Div Mockup */
 
@@ -207,7 +246,7 @@ i:hover {
 
 .background{
   content:"";
-  background:url("../image/pattern-01.png") repeat;
+  background:url("../image/pattern-05.png") repeat;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -261,6 +300,13 @@ i:hover {
   justify-content: space-around;
 }
 
+/* Div Office*/
+
+#office{
+  height: 35rem;
+  position: relative;
+}
+
 /* Section Contact */
 
 #Contact{
@@ -290,17 +336,17 @@ i:hover {
 }
 
 #logo-contact{
-  height: 2rem;
+  height: 1.5rem;
   width: auto;
 }
 
 #map{
-  width: 75%;
+  width: 90%;
   height: auto;
 }
 
 .info-box i{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 form {
