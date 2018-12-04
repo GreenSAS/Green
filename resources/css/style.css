@@ -173,17 +173,29 @@ i:hover {
 
 .mockup ul{
   display: flex;
-  overflow: hidden;
   list-style: none;
 }
 
 .mockup li{
  line-height: 0;
+ overflow: hidden;
 }
 
 .mockup img{
   width: 100%;
   height: auto;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.mockup img:hover{
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Div Intercal*/
@@ -353,7 +365,7 @@ label{
 	font-weight: bold;
 	padding: 0.6rem 0.7rem 0.65rem;
 	font-size: 0.7rem;
-	transition:all 0.3s ease 0s;
+	transition:all 0.5s ease 0s;
 	border:none;
 }
 
