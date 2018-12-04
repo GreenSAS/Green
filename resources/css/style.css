@@ -20,42 +20,18 @@
 body{
    font-family: "OpenSans", sans-serif;
    color:#333333;
-   font-size: 16px;
    cursor: default;
 }
 
-h1, h2, h3{
-  font-weight:normal;
-}
-
 h1, h2{
-  color:#6fb72f;
+  font-weight:normal;
 }
 
 h1{
   font-size: 3.5rem;
-  line-height: 1.2;
-}
-
-h2{
-  font-size: 3rem;
-  line-height: 1.5;
+  color:#6fb72f;
   letter-spacing: -3px;
   word-spacing: 3px;
-}
-
-h3{
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-
-i{
-  color:#333333;
-  font-size: 4rem;
-}
-
-i:hover {
-  color:#6fb72f;
 }
 
 a{
@@ -128,13 +104,32 @@ video{
 section{
   text-align: center;
   width: 100%;
-  padding: 10rem 0;
 }
 
 .container{
   display: flex;
   justify-content: center;
   margin-top: 10rem;
+}
+
+i{
+  color:#333333;
+}
+
+i:hover {
+  color:#6fb72f;
+}
+
+.icon{
+  font-size: 4rem;
+}
+
+.icon h2{
+  font-size: 1.2rem;
+}
+
+.icon p{
+  font-size: 1rem;
 }
 
 .box{
@@ -147,7 +142,7 @@ section{
   margin: 0 10%;
 }
 
-.box h3{
+.box h2{
   margin-top: 1rem;
 }
 
@@ -156,12 +151,11 @@ section{
   line-height: 1.3rem;
 }
 
-section img{
-  height: 5rem;
-  width:auto;
-}
-
 /* Section Comp */
+
+#Competences, #Empreinte{
+  padding: 10rem 0;
+}
 
 /* #Competences{
   background-color: #1d1c1a;
@@ -190,22 +184,6 @@ section img{
 .mockup img{
   width: 100%;
   height: auto;
-/*
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-backface-visibility: hidden;
-}
-
-.mockup img:hover{
-	transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	-webkit-transform: scale(1.05);
-	-o-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-*/
 }
 
 /* Div Intercal*/
@@ -274,27 +252,97 @@ section img{
 /* Section Contact */
 
 #Contact{
-  padding: 3rem 0;
+  width: 100%;
+  padding: 3rem 0 1.65rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-box{
+  width: 25%;
+}
+
+.info-box li{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.info-box p, .info-box h3{
+  margin-left: 2rem;
+}
+
+.info-box h3, form h2{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#logo-contact{
+  height: 2rem;
+  width: auto;
+}
+
+#map{
+  width: 75%;
+  height: auto;
+}
+
+.info-box i{
+  font-size: 2rem;
 }
 
 form {
-  width: 30rem;
-  margin: 0 auto;
-  padding: 5rem;
+  width: 25%;
+  padding: 1rem 3.5rem;
   border: 1px solid #e3e3e3;
   border-radius: .5em;
-  color:#6fb72f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font: 1rem sans-serif;
+}
+
+form h2{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+form p{
+  margin: 2rem 0 1rem 0;
+  font-size: 0.9rem;
 }
 
 .contact-box{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.field{
+  display: flex;
+  color:#6fb72f;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.field, .button{
+  margin-top: 1rem;
+}
+
+input, textarea {
+  width: 18rem;
+  border: 1px solid #e3e3e3;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  height: 10rem;
+}
+
+label{
+  margin-right: 0.5rem;
+  text-align: right;
 }
 
 .submit{
@@ -313,28 +361,8 @@ form {
   background: #6fb72f;
 }
 
-.field{
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.5rem 0;
-}
-
-input {
-  width: 18rem;
-  border: 1px solid #e3e3e3;
-}
-
-textarea {
-  width: 18rem;
-  border: 1px solid #e3e3e3;
-  height: 10rem;
-}
-
-label{
-  margin-right: 0.5rem;
-}
-
 .thankyou_message{
+  color:#6fb72f;
   margin-top: 4rem;
   display:none;
 }
@@ -343,11 +371,13 @@ label{
   display: none;
 }
 
-/*Buttonnav*/
+/*button-top*/
 
-.buttonnav{
-  padding:0;
+#button-top{
+  font-size: 4rem;
+  padding-bottom: 1.65rem;
 }
+
 
 /* Footer */
 
@@ -358,7 +388,6 @@ font-size: 1rem;
 text-align: center;
 border-top: 1px solid #f0f1f6;
 color: #c7c8ce;
-margin-top: 2.5rem;
 }
 
 /*Parallaxer*/
