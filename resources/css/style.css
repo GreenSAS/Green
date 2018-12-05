@@ -23,6 +23,7 @@ body{
    cursor: default;
    background-attachment: fixed;
    background-size: cover;
+   background-position: center;
 }
 
 h1, h2{
@@ -44,6 +45,25 @@ a{
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
   transition: all .2s linear;
+}
+
+video {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+  video {
+    height: 100%;
+  }
+}
+@media screen and (min-aspect-ratio: 1920/1080) {
+  video {
+    width: 100%;
+  }
 }
 
 /* Header */
@@ -88,25 +108,15 @@ header img{
 
 .banner{
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
 }
 
-#video-background-banner {
-  position: absolute;;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -50;
+#video-banner{
+  z-index: 1;
 }
-
 
 /* Styles sections */
 
@@ -163,7 +173,7 @@ i:hover {
 /* Section Premockup*/
 
 #premockup{
-  height: 42rem;
+  height: 35rem;
   position: relative;
 }
 
@@ -204,17 +214,9 @@ i:hover {
   color: inherit;
 }
 
-#video-background-comp {
-  position: absolute;;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+#video-comp {
   z-index: -100;
+  position:fixed;
 }
 
 /* Section Empreinte */
@@ -301,7 +303,7 @@ i:hover {
 /* Section Qui-sommes-nous? */
 
 #Qui{
-  background-color: #1d1c1a;
+  background-color: #222a35;
   color:#f0eded;
   padding: 0;
 }
@@ -395,7 +397,7 @@ i:hover {
 form {
   width: 25%;
   padding: 1rem 3.5rem;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #6fb72f;
   border-radius: .5em;
   display: flex;
   flex-direction: column;
@@ -488,7 +490,6 @@ width: 100%;
 font-size: 1rem;
 text-align: center;
 border-top: 1px solid #f0f1f6;
-color: #c7c8ce;
 }
 
 /*Parallaxer*/

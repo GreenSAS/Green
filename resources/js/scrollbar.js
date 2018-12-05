@@ -3,7 +3,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("header").style.background = "#1d1c1a";
+    document.getElementById("header").style.background = "#222a35";
     document.getElementById("logo").style.display = "block";
     document.getElementById("logo-white").style.display = "none";
   } else {
