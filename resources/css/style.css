@@ -21,6 +21,8 @@ body{
    font-family: "OpenSans", sans-serif;
    color:#333333;
    cursor: default;
+   background-attachment: fixed;
+   background-size: cover;
 }
 
 h1, h2{
@@ -86,18 +88,25 @@ header img{
 
 .banner{
   height: 100vh;
-  background-color:#6eb62e;
   overflow: hidden;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-video{
-  height: auto;
-  width: 100%;
+#video-background-banner {
+  position: absolute;;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -50;
 }
+
 
 /* Styles sections */
 
@@ -174,6 +183,7 @@ i:hover {
 
 #Competences{
   padding: 9rem 0;
+  position: relative;
 }
 
 #Competences .container{
@@ -192,6 +202,19 @@ i:hover {
 
 #Competences h1 i:hover {
   color: inherit;
+}
+
+#video-background-comp {
+  position: absolute;;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
 
 /* Section Empreinte */
