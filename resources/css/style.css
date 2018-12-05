@@ -160,7 +160,7 @@ i:hover {
 
 .tech{
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #efeded;
   position: absolute;
   z-index: 3;
@@ -185,6 +185,7 @@ i:hover {
 }
 
 #Competences h1 i{
+  color:#333333;
   font-size: 2.5rem;
   vertical-align: top;
 }
@@ -192,7 +193,6 @@ i:hover {
 #Competences h1 i:hover {
   color: inherit;
 }
-
 
 /* Section Empreinte */
 
@@ -249,13 +249,13 @@ i:hover {
 /* Div Intercal*/
 
 #intercal{
-  height: 20rem;
+  height: 25rem;
   position: relative;
 }
 
 .background{
   content:"";
-  background:url("../image/pattern-05.png") repeat;
+  background:url("../image/pattern-01.png") repeat;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -314,6 +314,17 @@ i:hover {
 #office{
   height: 35rem;
   position: relative;
+}
+
+#office .background{
+  content:"";
+  background:url("../image/pattern-05.png") repeat;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 /* Section Contact */
