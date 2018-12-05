@@ -184,6 +184,15 @@ i:hover {
   color: #333333;
 }
 
+#Competences h1 i{
+  font-size: 2.5rem;
+  vertical-align: top;
+}
+
+#Competences h1 i:hover {
+  color: inherit;
+}
+
 
 /* Section Empreinte */
 
