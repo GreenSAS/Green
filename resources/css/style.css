@@ -329,6 +329,7 @@ i:hover {
 
 #Qui .container{
   height: 40rem;
+  background:url("../image/pattern-02.png") repeat;
   margin: 0;
   align-items: center;
   justify-content: space-around;
@@ -489,7 +490,8 @@ padding: 2rem 0;
 width: 100%;
 font-size: 1rem;
 text-align: center;
-border-top: 1px solid #f0f1f6;
+border-top: 1px solid #999999;
+color: #999999;
 }
 
 /*Parallaxer*/
