@@ -399,6 +399,7 @@ form {
   width: 25%;
   padding: 1rem 3.5rem;
   border: 1px solid #6fb72f;
+  border-style: hidden;
   border-radius: .5em;
   display: flex;
   flex-direction: column;
@@ -435,13 +436,18 @@ form p{
 
 input, textarea {
   width: 18rem;
-  border: 1px solid #e3e3e3;
+  border: 1px solid #cfcfcf;
+  opacity: 0.8;
   padding: 0;
   margin: 0;
+  font-family: inherit;
+  font-size: 0.9rem;
 }
 
 textarea {
   height: 10rem;
+  font-family: inherit;
+  font-size: 0.9rem;
 }
 
 label{
@@ -490,7 +496,7 @@ padding: 2rem 0;
 width: 100%;
 font-size: 1rem;
 text-align: center;
-border-top: 1px solid #999999;
+border-top: 1px solid #3333;
 color: #999999;
 }
 
