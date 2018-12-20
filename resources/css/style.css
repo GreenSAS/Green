@@ -47,7 +47,7 @@ a{
   transition: all .2s linear;
 }
 
-video {
+#video-banner, #video-comp {
   display: block;
   position: absolute;
   left: 50%;
@@ -56,12 +56,12 @@ video {
 }
 
 @media screen and (max-aspect-ratio: 1920/1080) {
-  video {
+  #video-banner, #video-comp {
     height: 100%;
   }
 }
 @media screen and (min-aspect-ratio: 1920/1080) {
-  video {
+  #video-banner, #video-comp {
     width: 100%;
   }
 }
@@ -70,7 +70,7 @@ video {
 
 header{
   height: 4rem;
-  z-index: 999;
+  z-index: 4;
   position: fixed;
   width: 100%;
 }
@@ -108,7 +108,6 @@ header img{
 
 .banner{
   height: 100vh;
-  width: 100vw;
   overflow: hidden;
   margin: 0;
   position: relative;
@@ -135,7 +134,7 @@ i{
   color:#333333;
 }
 
-i:hover {
+section i:hover {
   color:#6fb72f;
 }
 
@@ -335,23 +334,6 @@ i:hover {
   justify-content: space-around;
 }
 
-/* Div Office*/
-
-#office{
-  height: 35rem;
-  position: relative;
-}
-
-#office .background{
-  content:"";
-  background:url("../image/pattern-05.png") repeat;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
 /* Section Contact */
 
@@ -428,9 +410,6 @@ form p{
   color:#6fb72f;
   font-size: 1rem;
   justify-content: center;
-}
-
-.field, .button{
   margin-top: 1rem;
 }
 
@@ -481,11 +460,36 @@ label{
   display: none;
 }
 
-/*button-top*/
+/*nav buttons*/
 
-#button-top{
+.buttonnav{
   font-size: 4rem;
-  padding-bottom: 1.65rem;
+  position: absolute;
+  right:50%;
+  top:90%;
+  z-index: 5;
+}
+
+.buttonnav i:hover{
+  color: white;
+}
+
+/*Anim */
+
+.anim{
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  line-height: 0;
+}
+
+.button .anim{
+
+}
+
+#video-end{
+  height: auto;
+  width: 100vw;
 }
 
 
