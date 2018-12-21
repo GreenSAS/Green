@@ -476,12 +476,19 @@ label{
   font-size: 4rem;
   position: absolute;
   right:50%;
-  top:90%;
   z-index: 5;
 }
 
 .buttonnav i:hover{
   color: white;
+}
+
+#buttondown{
+  top: 90%;
+}
+
+#buttonup{
+    top:85%;
 }
 
 /*Anim */
