@@ -10,6 +10,8 @@
     <script type="text/javascript" src="./resources/js/scrollbar.js"></script>
     <script type="text/javascript" src="./resources/js/smoothnav.js"></script>
     <script type="text/javascript" src="./resources/js/menuslide.js"></script>
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
     <link href="./resources/css/all.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -39,9 +41,14 @@
 <!-- Banniere/Anim -->
 
     <div class="banner" id="Accueil" role="none">
-      <video autoplay muted loop id="video-banner" alt="">
-        <source src="resources/video/video_green.mp4" type="video/mp4">Video not supported
-      </video>
+      <video id="video-banner" class="video-js" controls preload="auto" width="1920" height="1080" autoplay muted loop data-setup="{}">
+        <source src="resources/video/video_green.mp4" type='video/mp4'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+        <script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
       <div class="buttonnav" id="buttondown">
       <nav><a href="#Competences"><i class="far fa-angle-down"></i></a></nav>
       </div>
