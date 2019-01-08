@@ -117,7 +117,7 @@ header i{
   cursor: pointer;
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .topnav{
     display: none;
   }
@@ -131,7 +131,7 @@ header i{
   }
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .topnav.responsive{
     position: absolute;
     right: 0;
@@ -211,7 +211,7 @@ section i:hover {
   line-height: 1.3rem;
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .container{
     flex-direction: column;
     align-items: center;
@@ -303,7 +303,7 @@ section i:hover {
   transform: scale(1.1);
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .mockup ul{
     flex-direction:column;
   }
@@ -523,7 +523,7 @@ label{
   display: none;
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   #Contact{
     flex-direction: column;
     justify-content: center;
@@ -543,10 +543,10 @@ label{
     font-size: 1rem;
   }
   input, textarea{
-    width: 25rem;
+    width: 15rem;
   }
   textarea{
-    height: 15rem;
+    height: 11rem;
   }
 }
 
@@ -571,7 +571,7 @@ label{
     top:85%;
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .buttonnav{
     display: none;
   }
@@ -634,7 +634,7 @@ color: #999999;
 	display: none;
 }
 
-@media screen and (min-width : 320px) and (max-width : 740px) {
+@media screen and (min-device-width : 320px) and (max-device-width : 740px) {
   .parallaxer{
     height: 25rem;
   }
