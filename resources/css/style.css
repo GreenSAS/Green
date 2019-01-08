@@ -43,8 +43,9 @@ h1{
 
 a{
   text-decoration: none;
-  position: relative;
   cursor: pointer;
+  /*position: relative;*/
+  text-align: center;
   -webkit-transition: all .2s linear;
   -moz-transition: all .2s linear;
   -o-transition: all .2s linear;
@@ -73,7 +74,6 @@ a{
 /* Header */
 
 header{
-  height: 4rem;
   z-index: 4;
   position: fixed;
   width: 100%;
@@ -81,13 +81,15 @@ header{
 
 header a{
   color: white;
+  font-size: 1rem;
+  padding: 0 1rem;
 }
 
 .header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5rem 0 0.75rem;
+  padding: 0.5rem 0.75rem;
   height: 100%;
   transition: 0.4s;
   border: none;
@@ -97,16 +99,52 @@ header a{
   display: none;
 }
 
-header li{
-  display: inline;
-  margin-right: 1rem;
-  color: hsl(60, 2%, 30%);
-}
-
 header img{
   height: 2.75rem;
   width: auto;
 }
+
+#menuslide{
+  display: none;
+}
+
+  /*Header Mobile*/
+
+header i{
+  color: white;
+  font-size: 2.25rem;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 740px) {
+  .topnav{
+    display: none;
+  }
+  #menuslide{
+    float: right;
+    display: block;
+  }
+  header img{
+    height: 2.15rem;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .topnav.responsive{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+  }
+  .topnav a{
+    display: block;
+    text-align: right;
+    padding-top: 1rem;
+  }
+}
+
 
 /* Bannière/Anim */
 
@@ -173,24 +211,19 @@ section i:hover {
   line-height: 1.3rem;
 }
 
-/* Section Premockup*/
-
-#premockup{
-  height: 35rem;
-  position: relative;
+@media screen and (max-width: 740px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    width:50%;
+  }
+  .box:nth-child(2n+2){
+    margin: 4rem 0;
+  }
 }
 
-.tech{
-  text-align: center;
-  font-size: 1.5rem;
-  color: #efeded;
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
 
 /* Section Competences */
 
@@ -222,27 +255,24 @@ section i:hover {
   position:fixed;
 }
 
-/* Section Empreinte */
+/* Section Premockup*/
 
-#Empreinte{
-  background-color: #222a35;
-  color: #ffffff;
-  padding: 10rem 0;
+#premockup{
+  height: 35rem;
+  position: relative;
 }
 
-#Empreinte .container{
-  margin-top: 10rem;
+.tech{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #efeded;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
-
-#Empreinte h1{
-  line-height: 1;
-}
-
-#Empreinte i{
-  color:#6fb72f;
-  font-size: 4rem;
-}
-
 
 /* Div Mockup */
 
@@ -272,6 +302,34 @@ section i:hover {
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 740px) {
+  .mockup ul{
+    flex-direction:column;
+  }
+}
+
+/* Section Empreinte */
+
+#Empreinte{
+  background-color: #222a35;
+  color: #ffffff;
+  padding: 10rem 0;
+}
+
+#Empreinte .container{
+  margin-top: 10rem;
+}
+
+#Empreinte h1{
+  line-height: 1;
+}
+
+#Empreinte i{
+  color:#6fb72f;
+  font-size: 4rem;
+}
+
 
 /* Div Intercal*/
 
@@ -340,16 +398,12 @@ section i:hover {
   padding-top: 5rem;
 }
 
-/*#Qui .container, #Qui h1{
-  background:url("../image/pattern-02.png") repeat;
-}*/
-
-
 /* Section Contact */
 
 #Contact{
   width: 100%;
-  padding: 3rem 0 1.65rem 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   display: flex;
   justify-content: space-around;
 }
@@ -379,7 +433,7 @@ section i:hover {
 }
 
 #map{
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
@@ -390,9 +444,6 @@ section i:hover {
 form {
   width: 25%;
   padding: 1rem 3.5rem;
-  border: 1px solid #6fb72f;
-  border-style: hidden;
-  border-radius: .5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,8 +451,6 @@ form {
 
 form h2{
   height: 2rem;
-  display: flex;
-  align-items: center;
 }
 
 form p{
@@ -444,6 +493,10 @@ label{
   text-align: right;
 }
 
+.button{
+  margin-top: 0.5rem;
+}
+
 .submit{
   color: #ffffff;
   background: #333333;
@@ -470,6 +523,33 @@ label{
   display: none;
 }
 
+@media screen and (max-width: 740px) {
+  #Contact{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-box{
+    width: 90%;
+    padding: 0 2rem;
+  }
+  form{
+    width: 90%;
+    padding: 0 2rem;
+    margin-top: 6rem;
+  }
+  form p{
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  input, textarea{
+    width: 25rem;
+  }
+  textarea{
+    height: 15rem;
+  }
+}
+
 /*nav buttons*/
 
 .buttonnav{
@@ -491,6 +571,12 @@ label{
     top:85%;
 }
 
+@media screen and (max-width: 740px) {
+  .buttonnav{
+    display: none;
+  }
+}
+
 /*Anim */
 
 .anim{
@@ -500,9 +586,6 @@ label{
   line-height: 0;
 }
 
-.button .anim{
-
-}
 
 #video-end{
   height: auto;
@@ -553,3 +636,17 @@ color: #999999;
 .parallaxer-not-supported {
 	display: none;
 }
+
+/* General media queries*/
+
+/*@media only screen and (min-width: 740px){
+  .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 740px){
+  .desktop{
+    display: none;
+  }
+}*/

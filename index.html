@@ -9,6 +9,7 @@
     <script type="text/javascript" src="./resources/js/jquery.parallaxer.js"></script>
     <script type="text/javascript" src="./resources/js/scrollbar.js"></script>
     <script type="text/javascript" src="./resources/js/smoothnav.js"></script>
+    <script type="text/javascript" src="./resources/js/menuslide.js"></script>
     <link href="./resources/css/all.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
   </head>
@@ -20,15 +21,16 @@
       <div class="header desktop" id="header" role="none">
         <img id="logo-white" src="./resources/image/green_logoWhiteOnly.png" alt="Green SAS logo">
         <img id="logo" src="./resources/image/green_logoOnly.png" alt="Green SAS logo">
-        <nav>
-          <ul role="none">
-            <li><a href="#Accueil">Accueil</a></li>
-            <li><a href="#Competences">Comp&#xE9;tences</a></li>
-            <li><a href="#Empreinte">Notre Empreinte</a></li>
-            <li><a href="#Qui">Qui sommes-nous?</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
+        <nav class="topnav" id="myTopnav">
+          <a href="#Accueil">Accueil</a>
+          <a href="#Competences">Comp&#xE9;tences</a>
+          <a href="#Empreinte">Notre Empreinte</a>
+          <a href="#Qui">Qui sommes-nous?</a>
+          <a href="#Contact">Contact</a>
         </nav>
+        <div href="javascript:void(0);" id="menuslide" onclick="myFunction()">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </header>
 
