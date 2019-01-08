@@ -433,7 +433,7 @@ section i:hover {
 }
 
 #map{
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -466,7 +466,7 @@ form p{
 }
 
 input, textarea {
-  width: 70%;
+  width: 55%;
   border: 1px solid #cfcfcf;
   opacity: 0.8;
   padding: 0;
