@@ -113,7 +113,6 @@ header img{
 header i{
   color: white;
   font-size: 2.25rem;
-  float: right;
   cursor: pointer;
 }
 
@@ -122,12 +121,10 @@ header i{
     display: none;
   }
   #menuslide{
-    float: right;
     display: block;
   }
   header img{
     height: 2.15rem;
-    float: left;
   }
 }
 
@@ -409,12 +406,27 @@ section i:hover {
 }
 
 .info-box{
-  width: 35%;
+  width: 35.5rem;
 }
 
 .info-box li{
   display: flex;
   align-items: center;
+}
+
+.info-box li:first-child{
+  margin-top: 1rem;
+}
+
+.info-box li:nth-child(0n+2){
+  margin-top: 2.5rem;
+}
+
+.info-box li:nth-child(0n+3){
+  margin-top: 2rem;
+}
+
+.info-box li:nth-child(1n+4){
   margin-top: 1rem;
 }
 
@@ -442,41 +454,50 @@ section i:hover {
 }
 
 form {
-  width: 35%;
   padding: 1rem;
+  line-height: normal;
 }
 
 form h2{
   height: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 form p{
-  margin: 2rem 0 1rem 0;
+  margin: 0;
   font-size: 0.9rem;
 }
 
 .contact-box{
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .field{
   color:#6fb72f;
   margin-bottom: 1rem;
-  height: 1rem;
+  display: flex;
+  justify-content:flex-end;
+}
+
+input{
+  width: 25rem;
 }
 
 input, textarea {
-  width: 55%;
   border: 1px solid #cfcfcf;
   opacity: 0.8;
-  padding: 0;
   margin-left: 0.5rem;
+  margin-right: 5rem;
   font-family: inherit;
   font-size: 0.9rem;
-  float: left;
 }
 
 textarea {
+  width: 24.75rem;
   height: 15rem;
   font-family: inherit;
   font-size: 0.9rem;
@@ -484,12 +505,10 @@ textarea {
 
 label{
   text-align: right;
-  width:15%;
-  float:left;
+  width:5rem;
 }
 
 .submitbutton{
-  margin-top: 0.5rem;
   height: 3rem;
 }
 
@@ -511,7 +530,6 @@ label{
 
 .thankyou_message{
   color:#6fb72f;
-  margin-top: 4rem;
   display:none;
 }
 
