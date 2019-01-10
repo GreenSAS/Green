@@ -60,6 +60,14 @@ a{
   transform: translate(-50%, -50%);
 }
 
+i{
+  font-size:4rem;
+}
+
+p{
+  font-size:1rem;
+}
+
 @media screen and (max-width : 1280px){
   p{
     font-size: 0.8rem;
@@ -183,16 +191,8 @@ section i:hover {
   color:#6fb72f;
 }
 
-.icon{
-  font-size: 4rem;
-}
-
 .icon h2{
   font-size: 1.2rem;
-}
-
-.icon p{
-  font-size: 1rem;
 }
 
 .box{
@@ -348,7 +348,6 @@ section i:hover {
 
 #Empreinte i{
   color:#6fb72f;
-  font-size: 4rem;
 }
 
 
@@ -436,7 +435,7 @@ section i:hover {
 }
 
 .info-box{
-  width: 35%;
+  width: 35rem;
 }
 
 .info-box li{
@@ -474,8 +473,8 @@ section i:hover {
 }
 
 #map{
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 20rem;
 }
 
 .info-box i{
@@ -485,7 +484,7 @@ section i:hover {
 
 form {
   padding: 1rem;
-  width: 35%;
+  width: 35rem;
 }
 
 form h2{
