@@ -571,8 +571,8 @@ label{
     align-items: center;
   }
   .info-box{
-    width: 90%;
-    padding: 0 2rem;
+    padding: 0;
+    width: auto;
   }
   .info-box li:nth-child(0n+2){
     justify-content: center;
@@ -580,10 +580,14 @@ label{
   .info-box i{
     font-size: 1.2rem;
   }
+  #map{
+    width: auto;
+    height: 15rem;
+  }
   form{
-    width: 90%;
-    padding: 0 2rem;
+    padding: 0;
     margin-top: 6rem;
+    width: auto;
   }
   form p{
     margin-top: 1rem;
