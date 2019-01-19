@@ -34,5 +34,7 @@ $(document).ready(function(){
 		$('body,html').animate({
 			scrollTop: target.offset().top
 		}, 800);
+		menu.classList.remove('effect');
+		menu.classList.remove('menu-open');
 	}
 });

@@ -9,7 +9,6 @@
     <script type="text/javascript" src="./resources/js/jquery.parallaxer.js"></script>
     <script type="text/javascript" src="./resources/js/scrollbar.js"></script>
     <script type="text/javascript" src="./resources/js/smoothnav.js"></script>
-    <script type="text/javascript" src="./resources/js/menuslide.js"></script>
     <link href="./resources/css/all.css" type="text/css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -17,33 +16,49 @@
 
   <body>
 
-<!-- Header Nav-->
+<!-- Mobile Nav Menu-->
+<div class="st-container">
+
+    <nav class="menu effect">
+      <ul>
+        <li><a href="#Accueil">Accueil</a></li>
+        <li><a href="#Competences">Comp&#xE9;tences</a></li>
+        <li><a href="#Empreinte">Notre Empreinte</a></li>
+        <li><a href="#Qui">Qui sommes-nous?</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+<div class="pusher">
+<!-- Header-->
 
     <header>
-      <div class="header desktop" id="header" role="none">
+      <div class="header" id="header" role="none">
         <img id="logo-white" src="./resources/image/green_logoWhiteOnly.png" alt="Green SAS logo">
         <img id="logo" src="./resources/image/green_logoOnly.png" alt="Green SAS logo">
-        <nav class="topnav" id="myTopnav">
-          <a href="#Accueil">Accueil</a>
-          <a href="#Competences">Comp&#xE9;tences</a>
-          <a href="#Empreinte">Notre Empreinte</a>
-          <a href="#Qui">Qui sommes-nous?</a>
-          <a href="#Contact">Contact</a>
-        </nav>
-        <div href="javascript:void(0);" id="menuslide" onclick="myFunction()">
-          <i class="fas fa-bars"></i>
-        </div>
+          <nav class="topnav">
+            <a href="#Accueil">Accueil</a>
+            <a href="#Competences">Comp&#xE9;tences</a>
+            <a href="#Empreinte">Notre Empreinte</a>
+            <a href="#Qui">Qui sommes-nous?</a>
+            <a href="#Contact">Contact</a>
+          </nav>
+          <div class="menuslide">
+            <i class="fas fa-bars"></i>
+          </div>
       </div>
     </header>
 
 <!-- Banniere/Anim-->
 
     <div class="banner" id="Accueil" role="none">
-      <video autoplay loop muted playsinline id="video-banner" alt="">
+      <video autoplay loop muted playsinline id="video-banner" alt="" class="pusher">
         <source src="resources/video/video_green.mp4" type="video/mp4">Video not supported
-      </video
+      </video>
       <div class="buttonnav" id="buttondown">
-      <nav><a href="#Competences"><i class="far fa-angle-down"></i></a></nav>
+        <nav>
+          <a href="#Competences"><i class="far fa-angle-down"></i></a>
+        </nav>
       </div>
     </div>
 
@@ -203,7 +218,8 @@
     <footer>
       <span>© copyright Green SAS  Ι  all rights reserved</span>
     </footer>
-
+</div>
+</div>
   <script data-cfasync="false" type="text/javascript" src="./resources/js/Ajax.js"></script>
   <script type="text/javascript">
     (function ($) {
@@ -214,4 +230,5 @@
     }(jQuery));
   </script>
   </body>
+  <script type="text/javascript" src="./resources/js/menuslide.js"></script>
 </html>
