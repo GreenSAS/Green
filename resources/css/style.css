@@ -489,9 +489,6 @@ section i:hover {
   padding: 0;
 }
 
-#Qui .box{
-  width: 30%;
-}
 
 #Qui img{
   height: 15rem;
@@ -535,6 +532,11 @@ section i:hover {
   }
 }
 
+@media screen and (max-width : 740px) {
+  #Qui .box{
+    width: auto;
+  }
+}
 
 
 /* Section Contact */
