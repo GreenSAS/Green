@@ -59,11 +59,6 @@ p{
   font-size:1rem;
 }
 
-.st-container,
-.pusher{
-	height: 100%;
-}
-
 .st-container {
 	position: relative;
 	overflow: hidden;
@@ -83,6 +78,7 @@ p{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  height: auto;
 }
 
 @media screen and (max-width : 1280px){
@@ -248,6 +244,13 @@ header i{
   }
   .menuslide{
     display: block;
+  }
+
+}
+
+@media screen and (max-width : 840px) {
+  .topnav a{
+    font-size: 0.9rem;
   }
   header img{
     height: 2.15rem;
@@ -486,6 +489,10 @@ section i:hover {
   padding: 0;
 }
 
+#Qui .box{
+  width: 30%;
+}
+
 #Qui img{
   height: 15rem;
   width: auto;
@@ -516,11 +523,19 @@ section i:hover {
   padding-top: 5rem;
 }
 
-@media screen and (max-width : 740px) {
-  #Qui .box{
-    width: auto;
+@media screen and (min-width : 740px) and (max-width : 840px) {
+  #Qui img{
+    height: 10rem;
   }
 }
+
+@media screen and (min-width : 740px) {
+  #Qui .box{
+    width: 30%;
+  }
+}
+
+
 
 /* Section Contact */
 
