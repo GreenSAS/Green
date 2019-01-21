@@ -376,8 +376,8 @@ i{
 }
 
 @media screen and (max-width : 740px) {
-  .tech{
-    font-size: 1rem;
+  #premockup{
+    display: none;
   }
 }
 
