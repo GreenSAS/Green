@@ -74,8 +74,15 @@ p{
 	transition: transform 0.5s;
 }
 
-#video-banner, #video-comp {
+#video-banner1, #video-comp {
   display: block;
+}
+
+#video-banner2{
+  display: none;
+}
+
+#video-banner1, #video-banner2, #video-comp {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -90,13 +97,22 @@ p{
 }
 
 @media screen and (max-aspect-ratio: 1920/1080) {
-  #video-banner, #video-comp {
+  #video-banner1, #video-banner2, #video-comp {
     height: 100%;
   }
 }
 @media screen and (min-aspect-ratio: 1920/1080) {
-  #video-banner, #video-comp {
+  #video-banner1, #video-banner2, #video-comp {
     width: 100%;
+  }
+}
+
+@media screen and (max-width : 740px){
+  #video-banner1{
+    display: none;
+  }
+  #video-banner2{
+    display: block;
   }
 }
 
@@ -269,7 +285,7 @@ header i{
   position: relative;
 }
 
-#video-banner{
+#video-banner1, #video-banner2{
   z-index: 1;
 }
 
@@ -330,6 +346,15 @@ i{
   h1{
   font-size: 2rem;
   padding-top: 5rem;
+  }
+}
+
+@media screen and (min-width : 740px) and (max-width : 980px) {
+  .container{
+    padding: 7rem 0;
+  }
+  h1{
+  padding-top: 7rem;
   }
 }
 
@@ -770,7 +795,7 @@ color: #999999;
 
 @media screen and (min-width : 740px) and (max-width : 840px) {
   .parallaxer{
-    height: 26rem;
+    height: 25rem;
   }
 }
 
