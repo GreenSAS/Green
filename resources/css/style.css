@@ -74,11 +74,11 @@ p{
 	transition: transform 0.5s;
 }
 
-#video-banner1, #video-comp {
+#video-banner1, #video-comp, #video-end {
   display: block;
 }
 
-#video-banner2{
+#video-banner2, #video-end2{
   display: none;
 }
 
@@ -108,10 +108,10 @@ p{
 }
 
 @media screen and (max-width : 740px){
-  #video-banner1{
+  #video-banner1, #video-end{
     display: none;
   }
-  #video-banner2{
+  #video-banner2, #video-end2{
     display: block;
   }
 }
@@ -623,6 +623,11 @@ form p, input, textarea{
   width: 70%;
 }
 
+.field:not(:last-child){
+  display: flex;
+  align-items: center;
+}
+
 input, textarea {
   border: 1px solid #cfcfcf;
   opacity: 0.8;
@@ -680,22 +685,25 @@ textarea{
     width: 100%;
     height: auto;
   }
-  form p, input, textarea{
-    font-size: 0.9rem;
-  }
-  .info-list p{
-    font-size: 1rem;
-  }
   form{
     margin-top: 4rem;
   }
   label{
-    right: 75%;
+    right: 80%;
+  }
+  .subcontainer{
+  margin: 0;
+  }
+  .info-list i{
+    font-size: 1.2rem;
+  }
+  .info-list li p{
+    margin-left: 0.8rem;
   }
 }
 
 @media screen and (min-width: 1280px) and (max-width : 1440px) {
-  form p, input, textarea{
+  form p, label, input, textarea{
     font-size: 0.8rem;
   }
   .info-list p{
@@ -706,22 +714,18 @@ textarea{
   }
 }
 
-@media screen and (min-width: 1080px) and (max-width : 1280px) {
-  form p, input, textarea{
+@media screen and (max-width : 1280px) {
+  form p, label, input, textarea{
     font-size: 0.7rem;
   }
   .info-list p{
     font-size: 0.8rem;
-  }
-  label{
-    right: 35%;
   }
 }
 
 /*nav buttons*/
 
 .buttonnav{
-  font-size: 4rem;
   position: absolute;
   z-index: 5;
   width: 100%;
@@ -740,9 +744,27 @@ textarea{
   top:85%;
 }
 
-@media screen and (max-width : 740px) {
-  .buttonnav{
-    display: none;
+@media screen and (min-width : 960px) and (max-width : 1280px) {
+  .buttonnav i{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width : 960px){
+  .buttonnav i{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width : 600px) and (max-width : 740px){
+  #buttonup{
+    top:95%;
+  }
+}
+
+@media screen and (max-width : 600px){
+  #buttonup{
+    top:90%;
   }
 }
 
@@ -756,7 +778,7 @@ textarea{
 }
 
 
-#video-end{
+#video-end, #video-end2{
   height: auto;
   width: 100vw;
 }
