@@ -74,7 +74,7 @@ p{
 	transition: transform 0.5s;
 }
 
-#video-banner1, #video-banner2, #video-comp {
+#video-banner1, #video-comp {
   display: block;
 }
 
