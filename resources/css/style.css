@@ -90,12 +90,6 @@ p{
   height: auto;
 }
 
-@media screen and (max-width : 1280px){
-  p{
-    font-size: 0.8rem;
-  }
-}
-
 @media screen and (max-aspect-ratio: 1920/1080) {
   #video-banner1, #video-banner2, #video-comp {
     height: 100%;
@@ -330,6 +324,12 @@ i{
 .box p{
   margin-top: 1.5rem;
   line-height: 1.3rem;
+}
+
+@media screen and (max-width : 1280px){
+  #Competences p, #Qui p, #Empreintre p{
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width : 740px) {
@@ -603,9 +603,6 @@ form h2{
   height: 1.5rem;
 }
 
-form p, input, textarea{
-  font-size: 0.9rem;
-}
 
 .formulaire{
   display: flex;
@@ -646,7 +643,7 @@ textarea{
   color: #ffffff;
   background: #333333;
   cursor: pointer;
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	transition:all 0.5s ease 0s;
   height: 2rem;
   width : 15rem;
@@ -666,6 +663,12 @@ textarea{
 
 #honeypot {
   display: none;
+}
+
+@media screen and (min-width: 1080px) and (max-width : 1440px) {
+  label{
+    right: 35%;
+  }
 }
 
 @media screen and (max-width : 1080px) {
@@ -700,26 +703,16 @@ textarea{
   }
 }
 
-@media screen and (min-width: 1280px) and (max-width : 1440px) {
-  form p, label, input, textarea{
+@media screen and (min-width: 1080px) and (max-width : 1440px) {
+  .info, form{
+    width: 40%;
+    height: auto;
+  }
+  #Contact p, label, input{
     font-size: 0.8rem;
-  }
-  .info-list p{
-    font-size: 0.9rem;
-  }
-  label{
-    right: 35%;
   }
 }
 
-@media screen and (max-width : 1280px) {
-  form p, label, input, textarea{
-    font-size: 0.7rem;
-  }
-  .info-list p{
-    font-size: 0.8rem;
-  }
-}
 
 /*nav buttons*/
 
