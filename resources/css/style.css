@@ -708,6 +708,9 @@ textarea{
     width: 40%;
     height: auto;
   }
+}
+
+@media screen and (max-width : 1440px) {
   #Contact p, label, input{
     font-size: 0.8rem;
   }
