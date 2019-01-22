@@ -326,8 +326,14 @@ i{
   line-height: 1.3rem;
 }
 
-@media screen and (max-width : 1280px){
-  #Competences p, #Qui p, #Empreintre p{
+@media screen and (min-width : 1280px) and (max-width : 1440px){
+  p{
+    font-size: 0.9rem;
+  }
+}
+
+@media screen  and (max-width : 1280px){
+  p{
     font-size: 0.8rem;
   }
 }
@@ -632,7 +638,7 @@ input, textarea {
 label{
   position: absolute;
   text-align: right;
-  right: 36%;
+  right: 35%;
 }
 
 textarea{
@@ -665,9 +671,30 @@ textarea{
   display: none;
 }
 
-@media screen and (min-width: 1080px) and (max-width : 1440px) {
+
+@media screen and (min-width : 1080px) and (max-width : 1440px){
   label{
-    right: 35%;
+    font-size: 0.9rem;
+    right: 37%;
+  }
+}
+
+@media screen and (min-width : 740px) and (max-width : 1080px){
+  label , #Contact p{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width : 740px){
+  label{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width : 1440px) {
+  .info, form{
+    width: 40%;
+    height: auto;
   }
 }
 
@@ -700,19 +727,6 @@ textarea{
   }
   .info-list li p{
     margin-left: 0.8rem;
-  }
-}
-
-@media screen and (min-width: 1080px) and (max-width : 1440px) {
-  .info, form{
-    width: 40%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width : 1440px) {
-  #Contact p, label, input{
-    font-size: 0.8rem;
   }
 }
 
