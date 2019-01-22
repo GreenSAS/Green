@@ -496,7 +496,7 @@ i{
   -webkit-border-radius:50%;
   -moz-border-radius:50%;
   border-radius:50%;
-  border:0.6rem solid #6fb72f;
+  border:0.5rem solid #6fb72f;
 }
 
 #Qui a{
@@ -537,120 +537,119 @@ i{
   justify-content: space-around;
 }
 
-.info-box{
-  width: 35rem;
+.info, form{
+  width: 35%;
+  height: auto;
+  border: 0.5px solid #333333;
+  border-radius:10%;
 }
 
-.info-box li{
+.subcontainer{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 0 4rem;
 }
 
-.info-box li:first-child{
-  margin-top: 1rem;
+.info-title, .info-list{
+  width: 100%;
 }
 
-.info-box li:nth-child(0n+2){
-  margin-top: 2.5rem;
+.info-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 12rem;
 }
 
-.info-box li:nth-child(0n+3){
-  margin-top: 2rem;
+.info-list li, .info-title{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
 }
 
-.info-box li:nth-child(1n+4){
-  margin-top: 1rem;
+.info-title, form h2{
+  margin-bottom: 1rem;
 }
 
-.info-box p, .info-box h3{
-  margin-left: 2rem;
-}
-
-.info-box h3, form h2{
+.info-title h3, form h2{
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-#logo-contact{
+.info-title h3{
+  margin-left: 1rem;
+}
+
+#info-logo{
   height: 1.5rem;
   width: auto;
 }
 
 #map{
   width: auto;
-  height: 20rem;
+  height: 40%;
 }
 
-.info-box i{
+.info-list li p{
+  margin-left: 1rem;
+}
+
+.info-list i{
   font-size: 1.5rem;
-  align-items: center;
-}
-
-form {
-  padding: 1rem;
-  width: 35rem;
 }
 
 form h2{
-  height: 2rem;
-  margin-bottom: 1.5rem;
+  height: 1.5rem;
 }
 
-form p{
-  margin: 0;
+form p, input, textarea{
   font-size: 0.9rem;
 }
 
-.contact-box{
-  width: 79%;
+.formulaire{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 1.5rem;
+  align-items: center;
+  width: 100%;
 }
 
 .field{
   color:#6fb72f;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content:flex-end;
+  margin-top: 1.5rem;
+  width: 70%;
 }
 
 input, textarea {
   border: 1px solid #cfcfcf;
   opacity: 0.8;
-  margin-left: 3%;
-  font-family: inherit;
-  font-size: 0.9rem;
-  width: 72%;
-}
-
-textarea {
-  height: 15rem;
-  font-family: inherit;
-  font-size: 0.9rem;
+  width: 100%;
 }
 
 label{
+  position: absolute;
   text-align: right;
-  width:25%;
+  right: 36%;
 }
 
-.submitbutton{
-  height: 2rem;
-  display:flex;
-  justify-content: flex-end;
+textarea{
+  height: 15rem;
 }
 
 .submit{
   color: #ffffff;
   background: #333333;
   cursor: pointer;
-	display: inline-block;
-	font-weight: bold;
-	padding: 0.6rem 0.7rem 0.65rem;
 	font-size: 0.7rem;
 	transition:all 0.5s ease 0s;
-	border:none;
+  height: 2rem;
+  width : 15rem;
+  border: none;
+  margin-top: 1rem;
+  float: right;
 }
 
 .submit:hover{
@@ -666,39 +665,56 @@ label{
   display: none;
 }
 
-@media screen and (max-width : 740px) {
+@media screen and (max-width : 1080px) {
   #Contact{
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .info-box{
-    padding: 0;
-    width: auto;
-  }
-  .info-box li:nth-child(0n+2){
-    justify-content: center;
-  }
-  .info-box i{
-    font-size: 1.2rem;
+  .info, form{
+    width: 80%;
+    height: auto;
+    border: none;
   }
   #map{
-    width: auto;
-    height: 15rem;
+    width: 100%;
+    height: auto;
+  }
+  form p, input, textarea{
+    font-size: 0.9rem;
+  }
+  .info-list p{
+    font-size: 1rem;
   }
   form{
-    padding: 0;
-    margin-top: 6rem;
-    width: auto;
-  }
-  form p{
-    margin-top: 1rem;
+    margin-top: 4rem;
   }
   label{
+    right: 75%;    
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width : 1440px) {
+  form p, input, textarea{
     font-size: 0.8rem;
   }
-  textarea{
-    height: 10rem;
+  .info-list p{
+    font-size: 0.9rem;
+  }
+  label{
+    right: 35%;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width : 1280px) {
+  form p, input, textarea{
+    font-size: 0.7rem;
+  }
+  .info-list p{
+    font-size: 0.8rem;
+  }
+  label{
+    right: 35%;
   }
 }
 

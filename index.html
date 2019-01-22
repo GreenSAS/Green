@@ -165,41 +165,45 @@
 
     <section id="Contact" role="none">
 
-      <div class="info-box">
-        <li><img id="logo-contact" src="./resources/image/green_logoOnly.png" alt="Green Web SAS logo"><h3>Coordonn&#xE9;es</h3></li>
-        <li><img id="map" src="./resources/image/map_localisation.jpg" alt="Green Web SAS localisation"></li>
-        <li><i class="fas fa-phone"></i><p>Tel : 06 81 86 14 07</p></li>
-        <li><i class="fas fa-envelope"></i><p>Email : greenweb.sas@gmail.com</p></li>
-        <li><i class="fas fa-home"></i><p>Adresse : 12, avenue Santa Fior - 06100 Nice</p></li>
+      <div class="info">
+        <div class="subcontainer">
+          <div class="info-title">
+            <img id="info-logo" src="./resources/image/green_logoOnly.png" alt="Green Web SAS logo"><h3>Coordonn&#xE9;es</h3>
+          </div>
+          <img id="map" src="./resources/image/map_localisation.jpg" alt="Green Web SAS localisation">
+          <div class="info-list">
+            <li><i class="fas fa-phone"></i><p>Tel : 06 81 86 14 07</p></li>
+            <li><i class="fas fa-envelope"></i><p>Email : greenweb.sas@gmail.com</p></li>
+            <li><i class="fas fa-home"></i><p>Adresse : 12, avenue Santa Fior - 06100 Nice</p></li>
+          </div>
+        </div>
       </div>
 
       <form class= "gform" action="https://script.google.com/macros/s/AKfycbzz5Vmpz3vyFWHupeR7LM3mgI2tQcrJT7KXCkz9/exec" method="post">
         <!--Honeypot antispam-->
         <label class="sr-only"></label>
         <input id="honeypot" type="text" name="honeypot" value="" />
-
-        <h2>Formulaire de contact</h2>
-        <p>Vous souhaitez des informations sur nos prestations ?</br>Obtenir un rendez-vous ?</br>Contactez nous via notre formulaire.</br>Nous reviendrons vers vous dans les plus bref d&#xE9;lais.</p>
-
-        <div class="contact-box">
-          <div class="field">
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name">
+        <div class="subcontainer">
+          <h2>Formulaire de contact</h2>
+          <p>Vous souhaitez des informations sur nos prestations ?</br>Obtenir un rendez-vous ?</br>Contactez nous via notre formulaire.</br>Nous reviendrons vers vous dans les plus bref d&#xE9;lais.</p>
+          <div class="formulaire">
+            <div class="field">
+              <label for="name">Nom :</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="field">
+              <label for="mail">Email :</label>
+              <input type="email" id="mail" name="email">
+            </div>
+            <div class="field">
+              <label for="msg">Message :</label>
+              <textarea id="msg" name="message"></textarea>
+            </div>    
           </div>
-          <div class="field">
-            <label for="mail">Email :</label>
-            <input type="email" id="mail" name="email">
+          <button type="submit" class="submit">Envoyer le message</button>
+          <div class="thankyou_message">
+            <span>Merci pour votre message!</br>Nous reviendrons vers vous rapidement.</span>
           </div>
-          <div class="field">
-            <label for="msg">Message :</label>
-            <textarea id="msg" name="message"></textarea>
-          </div>
-          <div class="submitbutton">
-              <button type="submit" class="submit">Envoyer le message</button>
-          </div>
-        </div>
-        <div class="thankyou_message">
-          <span>Merci pour votre message!</br>Nous reviendrons vers vous rapidement.</span>
         </div>
       </form>
 
