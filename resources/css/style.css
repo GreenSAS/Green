@@ -256,7 +256,7 @@ header i{
   cursor: pointer;
 }
 
-@media screen and (max-width : 740px) {
+@media screen and (max-width : 840px) {
   .topnav{
     display: none;
   }
@@ -266,7 +266,7 @@ header i{
 
 }
 
-@media screen and (max-width : 840px) {
+@media screen and (max-width : 980px) {
   .topnav a{
     font-size: 0.9rem;
   }
@@ -707,8 +707,9 @@ label{
 .buttonnav{
   font-size: 4rem;
   position: absolute;
-  right:50%;
   z-index: 5;
+  width: 100%;
+  text-align: center;
 }
 
 .buttonnav i:hover{
@@ -720,7 +721,7 @@ label{
 }
 
 #buttonup{
-    top:85%;
+  top:85%;
 }
 
 @media screen and (max-width : 740px) {
