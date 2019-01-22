@@ -101,7 +101,7 @@ p{
   }
 }
 
-@media screen and (max-width : 540px){
+@media screen and (max-width : 480px){
   #video-banner1, #video-end{
     display: none;
   }
