@@ -152,7 +152,7 @@ p{
 	left: 0;
 	z-index: 100;
 	visibility: hidden;
-	width: 300px;
+	width: 250px;
 	height: 100%;
 	background-color: #222a35;
 	-webkit-transition: all 0.5s;
@@ -532,6 +532,19 @@ i{
   }
 }
 
+@media screen and (min-width : 840px) and (max-width : 980px){
+  #Qui p{
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width : 740px) and (max-width : 840px){
+  #Qui p{
+    font-size: 0.65rem;
+  }
+}
+
+
 
 /* Section Contact */
 
@@ -599,6 +612,7 @@ i{
 
 .info-list li p{
   margin-left: 1rem;
+  text-decoration: none;
 }
 
 .info-list i{
@@ -685,9 +699,15 @@ textarea{
   }
 }
 
-@media screen and (max-width : 740px){
+@media screen and (min-width : 440px) and (max-width : 740px){
   label{
     font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width : 440px){
+  label, #Contact p{
+    font-size: 0.7rem;
   }
 }
 
