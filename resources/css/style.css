@@ -826,12 +826,14 @@ textarea{
 }
 
 #video-end{
-  background:url("../image/banniere_green_poster.jpg") no-repeat;
+  background:url("../image/banniere_green_poster.jpg");
+  background-position: center;
   background-size: cover;
 }
 
 #video-end2{
-  background:url("../image/banniere_green_mobile_poster.jpg") no-repeat;
+  background:url("../image/banniere_green_mobile_poster.jpg");
+  background-position: center;
   background-size: cover;
 }
 
