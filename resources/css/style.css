@@ -282,17 +282,18 @@ header i{
 
 #video-banner1, #video-banner2{
   z-index: 1;
+}
+
+#video-banner1{
+  background:url("../image/video_green_poster.jpg");
   background-size: cover;
   background-position: center;
 }
 
-#video-banner1{
-  background:url("../image/video_green_poster.jpg") no-repeat;
-
-}
-
 #video-banner2{
-  background:url("../image/video_green_mobile_poster.jpg") no-repeat;
+  background:url("../image/video_green_mobile_poster.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -827,13 +828,13 @@ textarea{
 }
 
 #video-end{
-  background:url("../image/banniere_green_poster.jpg");
+  background:url("../image/banniere_green_poster.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 #video-end2{
-  background:url("../image/banniere_green_mobile_poster.jpg");
+  background:url("../image/banniere_green_mobile_poster.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
