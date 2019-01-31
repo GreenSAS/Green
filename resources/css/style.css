@@ -282,16 +282,17 @@ header i{
 
 #video-banner1, #video-banner2{
   z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 
 #video-banner1{
   background:url("../image/video_green_poster.jpg") no-repeat;
-  background-size: cover;
+
 }
 
 #video-banner2{
   background:url("../image/video_green_mobile_poster.jpg") no-repeat;
-  background-size: cover;
 }
 
 
