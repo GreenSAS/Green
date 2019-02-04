@@ -667,6 +667,7 @@ label{
 
 textarea{
   height: 15rem;
+  resize: none;
 }
 
 .submit{
