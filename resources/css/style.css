@@ -77,7 +77,7 @@ p{
 /*Videos*/
 
 video{
-  object-fit: fill;
+  object-fit: initial;
 }
 
 #video-banner1, #video-comp, #video-end {
