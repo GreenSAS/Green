@@ -82,6 +82,10 @@ video[poster]{
 
 video[poster]{object-fit:fill}
 
+video{
+  object-fit: fill;
+}
+
 #video-banner1, #video-comp, #video-end {
   display: block;
 }
