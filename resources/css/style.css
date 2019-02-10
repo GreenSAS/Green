@@ -78,12 +78,12 @@ p{
 
 #video-banner1, #video-comp, #video-end {
   display: block;
-  object-fit: cover;
+  object-fit: inherit;
 }
 
 #video-banner2, #video-end2{
   display: none;
-  object-fit: cover;
+  object-fit: inherit;
 }
 
 #video-banner1, #video-banner2, #video-comp {
