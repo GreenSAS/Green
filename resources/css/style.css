@@ -76,8 +76,8 @@ p{
 
 /*Videos*/
 
-video{
-  object-fit: contain;
+video[poster]{
+  object-fit: fill;
 }
 
 #video-banner1, #video-comp, #video-end {
