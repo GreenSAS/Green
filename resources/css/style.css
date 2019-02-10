@@ -90,6 +90,7 @@ p{
   top: 50%;
   transform: translate(-50%, -50%);
   height: auto;
+  max-width: 100%;
 }
 
 @media screen and (max-aspect-ratio: 1920/1080) {
