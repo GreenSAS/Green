@@ -76,12 +76,6 @@ p{
 
 /*Videos*/
 
-video[poster]{
-  object-fit: fill;
-}
-
-video[poster]{object-fit:fill}
-
 video{
   object-fit: fill;
 }
